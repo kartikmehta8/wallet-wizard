@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Input, Select, CryptoLogos } from '@web3uikit/core';
+import { Input } from '@web3uikit/core'; // Select, CryptoLogos 
 
 function WalletInputs({ chain, wallet, setChain, setWallet }) {
   return (
@@ -27,18 +27,19 @@ function WalletInputs({ chain, wallet, setChain, setWallet }) {
               fill='white'
             ></path>
           </svg> */}
-          <h1>Wizard</h1>
+          <h1 className='poppins'>Wizard</h1>
         </div>
         <div className='walletInputs'>
           <Input
             id='Wallet'
+            hasCopyButton={true}
             label='Wallet Address'
             labelBgColor='rgb(33, 33, 38)'
             value={wallet}
-            style={{ height: '50px' }}
+            style={{ height: '45px' }}
             onChange={(e) => setWallet(e.target.value)}
           />
-          <Select
+          {/* <Select
             defaultOptionIndex={0}
             id='Chain'
             onChange={(e) => setChain(e.value)}
@@ -56,7 +57,7 @@ function WalletInputs({ chain, wallet, setChain, setWallet }) {
                 prefix: <CryptoLogos chain='polygon' />,
               },
             ]}
-          />
+          /> */}
         </div>
       </div>
     </>

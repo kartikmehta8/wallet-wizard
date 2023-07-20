@@ -17,7 +17,7 @@ function PortfolioValue({ tokens, nativeValue }) {
 
   return (
     <>
-      <div className='totalValue'>
+      <div className='totalValue poppins'>
         <h3>Portfolio Total Value</h3>
         <h2>${totalValue}</h2>
       </div>
