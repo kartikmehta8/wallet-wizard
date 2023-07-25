@@ -51,4 +51,4 @@ Now, open your browser and navigate to `http://localhost:3000` to see the applic
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
